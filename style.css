@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Pacifico&family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+
+nav{
+    min-height: 10vh;
+    box-shadow: 5px 5px 5px rgb(196, 196, 196);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background-color: white;
+    padding: 0 20px;
+    padding-right: 40px;
+    /* padding-bottom: 0; */
+}
+
+.container{
+    max-width: 1200px;
+    
+    margin: 0 auto;
+}
+
+.edithero{
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    
+}
+
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tage{
+    border: 6px solid #ffa0a0;
+    background-color: rgb(112, 0, 0);
+    box-shadow: 4px 5px 7px hsl(0, 100%, 66%);
+    color: white;
+    padding: 5px 10px;
+}
+.tag{
+    align-self: flex-start;
+}
+
+.hero_content h1{
+    font-weight: 2200;
+    line-height: 1.2;
+    font-size: 70px;
+}
+
+
+button{
+    padding: 10px;
+    background-color: rgb(255, 231, 96);
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    transition: 0.2s ease-in-out ;
+    border: 6px solid rgb(255, 231, 96);
+    border-radius: 40px;
+    align-self: flex-start;
+}
+
+button:hover{
+    border: 6px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    transition:0.2s ease-in;
+    color: white;
+}
+
+
+
+.features{
+    margin-top: 100px;
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+
+.feature{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.feature:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 3px 10px rgb(146, 146, 146);
+    border-radius: 4px;
+}
+
+.feature img{
+    width: 72px;
+    height: 72px;
+}
+
+.divider{
+    /* margin: 1px; */
+    padding: 1px;
+    background-color: rgb(151, 151, 151);
+}
+
+
+.menu{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.grid{
+    padding: 20px;
+
+
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+}
+
+.item1{
+    grid-area: I1;
+}
+
+.item2{
+    grid-area: I2;
+}
+
+.item3{
+    grid-area: I3;
+}
+
+.item4{
+    grid-area: I4;
+}
+
+.item5{
+    grid-area: I5;
+}
+
+.item6{
+    grid-area: I6;
+}
+
+.item7{
+    grid-area: I7;
+}
+
+.gridIMG{
+    border: 7px solid white;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.gridIMG:hover{
+    transition: 0.2s ease-in-out;
+    border: 7px solid #ffa0a0;
+    box-shadow: 4px 5px 5px hsl(0, 100%, 66%);
+}
+
+footer{
+    background-color: #ffa0a0;
+}
+
+.footer_container{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.footer_logo{
+    width: 12%;
+}
+
+.icon_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    gap: 10px;
+
+}
+
+.icon_container img{
+    width: 30px;
+}
+
+.link_lists ul li{
+    color: rgb(37, 37, 37);
+    list-style: none;
+    font-size: 16px;
+}
+
+@media (max-width:974px){
+    .edithero{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+    }
+    .hero_content{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0 50px; */
+    }
+    .tage{
+        align-self: center;
+    }
+    .explore_btn{
+        align-self: center;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .heroIMG img{
+        /* width: 100vh; */
+        display: flex;
+        justify-content: center;
+    }
+    .hero_content h1{
+        font-size: 50px;
+    }
+
+    .features{
+        display: flex;
+        flex-direction: column;
+    }
+    @media (max-width:540px){
+        .heroIMG img{
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .footer_container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
